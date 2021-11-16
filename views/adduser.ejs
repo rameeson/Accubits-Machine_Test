@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <title>User Details</title>
+</head>
+</head>
+<header>
+  <%- include("partials/header") %>
+</header>
+<body>
+  <div class="container">
+    <main role="main" class="container mt-4">
+      <div class="jumbotron">
+        <table>
+          <tr>
+            <td style="width:50%">
+              <hr />
+            </td>
+            <td style="vertical-align:middle; text-align: center; color:red ">
+              <h3><b>FORM</b></3>
+            </td>
+            <td style="width:50%">
+              <hr />
+            </td>
+          </tr>
+        </table>
+        <div style="text-align: center;">
+          <div class="row">
+            <div class="col-md-6">
+              <form action="/adduser" method="POST">
+                <div class="mb-3">
+                  <label for="fname" class="form-label"><strong>First Name</strong></label>
+                  <input type="text" name="fname" class="form-control" id="fname">
+
+                </div>
+            </div>
+            <div class="col-md-6">
+
+              <div class="mb-3">
+                <label for="lname" class="form-label"><strong>Last Name</strong></label>
+                <input type="text" name="lname" class="form-control" id="lname">
+
+              </div>
+            </div>
+            <div class="col-md-6">
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"><strong>email</strong></label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp">
+
+              </div>
+            </div>
+            <div class="col-md-6">
+
+              <div class="mb-3">
+                <label for="age" class="form-label"><strong>Age</strong></label>
+                <input type="number" name="age" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp">
+
+              </div>
+
+            </div>
+            <button type="submit" class="btn btn-primary ml-3">Submit</button>
+
+
+
+            </form>
+
+          </div>
+        </div>
+
+    </main>
+
+  </div>
+
+</body>
+</nav>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
